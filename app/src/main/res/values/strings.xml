@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">JazpOnlineShoping</string>
+
+    <string name="home">Home</string>
+    <string name="Category">Category</string>
+    <string name="Account">Account</string>
+</resources>

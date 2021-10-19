@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/include"
+        layout="@layout/tollbar"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentTop="true"></include>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/include">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <androidx.viewpager.widget.ViewPager
+                    android:id="@+id/viewPager"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/viewpager_height"
+                    android:layout_margin="10dp"></androidx.viewpager.widget.ViewPager>
+
+                <TextView
+                    android:id="@+id/category"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/viewPager"
+                    android:layout_margin="10dp"
+                    android:text="All catigories"
+                    android:textColor="#000000"
+                    android:textSize="20dp"
+                    android:textStyle="bold"></TextView>
+
+                    <RelativeLayout
+                        android:id="@+id/first"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/category"
+                        android:layout_marginTop="10dp">
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/recycler2"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="10dp">
+
+                        </androidx.recyclerview.widget.RecyclerView>
+
+                    </RelativeLayout>
+
+
+                <TextView
+                    android:id="@+id/category1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/first"
+                    android:layout_margin="10dp"
+                    android:text="Top Brands"
+                    android:textColor="#000000"
+                    android:textSize="20dp"
+                    android:textStyle="bold"></TextView>
+
+                <HorizontalScrollView
+                    android:id="@+id/brands"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/category1"
+                    android:layout_marginTop="10dp"
+                    android:scrollbars="none">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:id="@+id/onepluse"
+                            android:layout_width="@dimen/homebrands_image_width"
+                            android:layout_height="@dimen/homebrands_image_height"
+                            android:src="@drawable/brands6"></ImageView>
+
+                        <ImageView
+                            android:id="@+id/lenovo"
+                            android:layout_width="@dimen/homebrands_image_width"
+                            android:layout_height="@dimen/homebrands_image_height"
+                            android:layout_marginLeft="@dimen/margin_left"
+                            android:layout_toRightOf="@id/onepluse"
+                            android:src="@drawable/brands_7"></ImageView>
+
+                        <ImageView
+                            android:id="@+id/appel"
+                            android:layout_width="@dimen/homebrands_image_width"
+                            android:layout_height="@dimen/homebrands_image_height"
+                            android:layout_marginLeft="@dimen/margin_left"
+                            android:layout_toRightOf="@id/lenovo"
+                            android:src="@drawable/brands_1"></ImageView>
+
+                        <ImageView
+                            android:id="@+id/samsung"
+                            android:layout_width="@dimen/homebrands_image_width"
+                            android:layout_height="@dimen/homebrands_image_height"
+                            android:layout_marginLeft="@dimen/margin_left"
+                            android:layout_toRightOf="@id/appel"
+                            android:src="@drawable/brands_2"></ImageView>
+
+                        <ImageView
+                            android:id="@+id/appo"
+                            android:layout_width="@dimen/homebrands_image_width"
+                            android:layout_height="@dimen/homebrands_image_height"
+                            android:layout_marginLeft="@dimen/margin_left"
+                            android:layout_toRightOf="@id/samsung"
+                            android:src="@drawable/brands_3"></ImageView>
+
+
+                        <ImageView
+                            android:id="@+id/hp"
+                            android:layout_width="@dimen/homebrands_image_width"
+                            android:layout_height="@dimen/homebrands_image_height"
+                            android:layout_marginLeft="@dimen/margin_left"
+                            android:layout_toRightOf="@id/appo"
+                            android:src="@drawable/brands_8"></ImageView>
+
+
+                        <ImageView
+                            android:id="@+id/geeps"
+                            android:layout_width="@dimen/homebrands_image_width"
+                            android:layout_height="@dimen/homebrands_image_height"
+                            android:layout_marginLeft="@dimen/margin_left"
+                            android:layout_toRightOf="@id/hp"
+                            android:src="@drawable/brands_9"></ImageView>
+
+                        <ImageView
+                            android:id="@+id/olsenmark"
+                            android:layout_width="@dimen/homebrands_image_width"
+                            android:layout_height="@dimen/homebrands_image_height"
+                            android:layout_marginLeft="@dimen/margin_left"
+                            android:layout_toRightOf="@id/geeps"
+                            android:src="@drawable/brands_10"></ImageView>
+
+                        <ImageView
+                            android:id="@+id/casio"
+                            android:layout_width="@dimen/homebrands_image_width"
+                            android:layout_height="@dimen/homebrands_image_height"
+                            android:layout_marginLeft="@dimen/margin_left"
+                            android:layout_toRightOf="@id/olsenmark"
+                            android:src="@drawable/brands_11"></ImageView>
+
+                        <ImageView
+                            android:id="@+id/pigon"
+                            android:layout_width="@dimen/homebrands_image_width"
+                            android:layout_height="@dimen/homebrands_image_height"
+                            android:layout_marginLeft="@dimen/margin_left"
+                            android:layout_toRightOf="@id/casio"
+                            android:src="@drawable/brands_12"></ImageView>
+
+                        <ImageView
+                            android:id="@+id/dionaillard"
+                            android:layout_width="@dimen/homebrands_image_width"
+                            android:layout_height="@dimen/homebrands_image_height"
+                            android:layout_marginLeft="@dimen/margin_left"
+                            android:layout_toRightOf="@id/pigon"
+                            android:src="@drawable/brands_13"></ImageView>
+
+                        <ImageView
+                            android:id="@+id/nautica"
+                            android:layout_width="@dimen/homebrands_image_width"
+                            android:layout_height="@dimen/homebrands_image_height"
+                            android:layout_marginLeft="@dimen/margin_left"
+                            android:layout_toRightOf="@id/dionaillard"
+                            android:src="@drawable/brands_14"></ImageView>
+
+                        <ImageView
+                            android:id="@+id/promate"
+                            android:layout_width="@dimen/homebrands_image_width"
+                            android:layout_height="@dimen/homebrands_image_height"
+                            android:layout_marginLeft="@dimen/margin_left"
+                            android:layout_toRightOf="@id/nautica"
+                            android:src="@drawable/brands_15"></ImageView>
+
+                    </RelativeLayout>
+
+                </HorizontalScrollView>
+
+                <TextView
+                    android:id="@+id/category2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/brands"
+                    android:layout_margin="10dp"
+                    android:text="MOBILES &amp; TABLETS"
+                    android:textColor="#000000"
+                    android:textSize="20dp"
+                    android:textStyle="bold"></TextView>
+
+                <RelativeLayout
+                    android:id="@+id/mobile"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/category2">
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/recycler"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="10dp">
+
+                    </androidx.recyclerview.widget.RecyclerView>
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/category3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/mobile"
+                    android:layout_margin="10dp"
+                    android:text="TELEVISIONS &amp; SMART TV'S"
+                    android:textColor="#000000"
+                    android:textSize="20dp"
+                    android:textStyle="bold"></TextView>
+
+                <RelativeLayout
+                    android:id="@+id/TELEVISIONS"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/category3">
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/recycler1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="10dp">
+
+                    </androidx.recyclerview.widget.RecyclerView>
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+        </ScrollView>
+    </RelativeLayout>
+
+</RelativeLayout>

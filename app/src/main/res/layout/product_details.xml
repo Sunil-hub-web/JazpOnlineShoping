@@ -12,8 +12,8 @@
 
         <ImageView
             android:id="@+id/pimage"
-            android:layout_width="@dimen/homecategory_image_width"
-            android:layout_height="@dimen/homecategory_image_height"
+            android:layout_width="@dimen/eighty"
+            android:layout_height="@dimen/eighty"
             android:layout_centerHorizontal="true"
             android:src="@drawable/category1"></ImageView>
 
@@ -23,10 +23,10 @@
             android:layout_height="wrap_content"
             android:layout_below="@id/pimage"
             android:layout_centerHorizontal="true"
-            android:layout_margin="@dimen/text_margin"
+            android:layout_margin="@dimen/eight"
             android:text="Home&amp;Furniture"
             android:textColor="#000000"
-            android:textSize="@dimen/textSize"
+            android:textSize="@dimen/textsize"
             android:textStyle="bold"></TextView>
 
     </RelativeLayout>

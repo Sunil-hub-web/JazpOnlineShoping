@@ -26,7 +26,7 @@
                 <androidx.viewpager.widget.ViewPager
                     android:id="@+id/viewPager"
                     android:layout_width="match_parent"
-                    android:layout_height="@dimen/viewpager_height"
+                    android:layout_height="@dimen/hundred_eighty"
                     android:layout_margin="10dp"></androidx.viewpager.widget.ViewPager>
 
                 <TextView
@@ -83,105 +83,105 @@
 
                         <ImageView
                             android:id="@+id/onepluse"
-                            android:layout_width="@dimen/homebrands_image_width"
-                            android:layout_height="@dimen/homebrands_image_height"
+                            android:layout_width="@dimen/eighty"
+                            android:layout_height="@dimen/eighty"
                             android:src="@drawable/brands6"></ImageView>
 
                         <ImageView
                             android:id="@+id/lenovo"
-                            android:layout_width="@dimen/homebrands_image_width"
-                            android:layout_height="@dimen/homebrands_image_height"
-                            android:layout_marginLeft="@dimen/margin_left"
+                            android:layout_width="@dimen/eighty"
+                            android:layout_height="@dimen/eighty"
+                            android:layout_marginLeft="@dimen/ten"
                             android:layout_toRightOf="@id/onepluse"
                             android:src="@drawable/brands_7"></ImageView>
 
                         <ImageView
                             android:id="@+id/appel"
-                            android:layout_width="@dimen/homebrands_image_width"
-                            android:layout_height="@dimen/homebrands_image_height"
-                            android:layout_marginLeft="@dimen/margin_left"
+                            android:layout_width="@dimen/eighty"
+                            android:layout_height="@dimen/eighty"
+                            android:layout_marginLeft="@dimen/ten"
                             android:layout_toRightOf="@id/lenovo"
                             android:src="@drawable/brands_1"></ImageView>
 
                         <ImageView
                             android:id="@+id/samsung"
-                            android:layout_width="@dimen/homebrands_image_width"
-                            android:layout_height="@dimen/homebrands_image_height"
-                            android:layout_marginLeft="@dimen/margin_left"
+                            android:layout_width="@dimen/eighty"
+                            android:layout_height="@dimen/eighty"
+                            android:layout_marginLeft="@dimen/ten"
                             android:layout_toRightOf="@id/appel"
                             android:src="@drawable/brands_2"></ImageView>
 
                         <ImageView
                             android:id="@+id/appo"
-                            android:layout_width="@dimen/homebrands_image_width"
-                            android:layout_height="@dimen/homebrands_image_height"
-                            android:layout_marginLeft="@dimen/margin_left"
+                            android:layout_width="@dimen/eighty"
+                            android:layout_height="@dimen/eighty"
+                            android:layout_marginLeft="@dimen/ten"
                             android:layout_toRightOf="@id/samsung"
                             android:src="@drawable/brands_3"></ImageView>
 
 
                         <ImageView
                             android:id="@+id/hp"
-                            android:layout_width="@dimen/homebrands_image_width"
-                            android:layout_height="@dimen/homebrands_image_height"
-                            android:layout_marginLeft="@dimen/margin_left"
+                            android:layout_width="@dimen/eighty"
+                            android:layout_height="@dimen/eighty"
+                            android:layout_marginLeft="@dimen/ten"
                             android:layout_toRightOf="@id/appo"
                             android:src="@drawable/brands_8"></ImageView>
 
 
                         <ImageView
                             android:id="@+id/geeps"
-                            android:layout_width="@dimen/homebrands_image_width"
-                            android:layout_height="@dimen/homebrands_image_height"
-                            android:layout_marginLeft="@dimen/margin_left"
+                            android:layout_width="@dimen/eighty"
+                            android:layout_height="@dimen/eighty"
+                            android:layout_marginLeft="@dimen/ten"
                             android:layout_toRightOf="@id/hp"
                             android:src="@drawable/brands_9"></ImageView>
 
                         <ImageView
                             android:id="@+id/olsenmark"
-                            android:layout_width="@dimen/homebrands_image_width"
-                            android:layout_height="@dimen/homebrands_image_height"
-                            android:layout_marginLeft="@dimen/margin_left"
+                            android:layout_width="@dimen/eighty"
+                            android:layout_height="@dimen/eighty"
+                            android:layout_marginLeft="@dimen/ten"
                             android:layout_toRightOf="@id/geeps"
                             android:src="@drawable/brands_10"></ImageView>
 
                         <ImageView
                             android:id="@+id/casio"
-                            android:layout_width="@dimen/homebrands_image_width"
-                            android:layout_height="@dimen/homebrands_image_height"
-                            android:layout_marginLeft="@dimen/margin_left"
+                            android:layout_width="@dimen/eighty"
+                            android:layout_height="@dimen/eighty"
+                            android:layout_marginLeft="@dimen/ten"
                             android:layout_toRightOf="@id/olsenmark"
                             android:src="@drawable/brands_11"></ImageView>
 
                         <ImageView
                             android:id="@+id/pigon"
-                            android:layout_width="@dimen/homebrands_image_width"
-                            android:layout_height="@dimen/homebrands_image_height"
-                            android:layout_marginLeft="@dimen/margin_left"
+                            android:layout_width="@dimen/eighty"
+                            android:layout_height="@dimen/eighty"
+                            android:layout_marginLeft="@dimen/ten"
                             android:layout_toRightOf="@id/casio"
                             android:src="@drawable/brands_12"></ImageView>
 
                         <ImageView
                             android:id="@+id/dionaillard"
-                            android:layout_width="@dimen/homebrands_image_width"
-                            android:layout_height="@dimen/homebrands_image_height"
-                            android:layout_marginLeft="@dimen/margin_left"
+                            android:layout_width="@dimen/eighty"
+                            android:layout_height="@dimen/eighty"
+                            android:layout_marginLeft="@dimen/ten"
                             android:layout_toRightOf="@id/pigon"
                             android:src="@drawable/brands_13"></ImageView>
 
                         <ImageView
                             android:id="@+id/nautica"
-                            android:layout_width="@dimen/homebrands_image_width"
-                            android:layout_height="@dimen/homebrands_image_height"
-                            android:layout_marginLeft="@dimen/margin_left"
+                            android:layout_width="@dimen/eighty"
+                            android:layout_height="@dimen/eighty"
+                            android:layout_marginLeft="@dimen/ten"
                             android:layout_toRightOf="@id/dionaillard"
                             android:src="@drawable/brands_14"></ImageView>
 
                         <ImageView
                             android:id="@+id/promate"
-                            android:layout_width="@dimen/homebrands_image_width"
-                            android:layout_height="@dimen/homebrands_image_height"
-                            android:layout_marginLeft="@dimen/margin_left"
+                            android:layout_width="@dimen/eighty"
+                            android:layout_height="@dimen/eighty"
+                            android:layout_marginLeft="@dimen/ten"
                             android:layout_toRightOf="@id/nautica"
                             android:src="@drawable/brands_15"></ImageView>
 

@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/fifty">
+
+        <TextView
+            android:id="@+id/mobile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/ten"
+            android:text="@string/mobilenumber"
+            android:textColor="@color/black"
+            android:textSize="22sp">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/otp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/mobile"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/five"
+            android:text="@string/otp"
+            android:textSize="@dimen/textsize">
+
+        </TextView>
+
+        <LinearLayout
+            android:id="@+id/number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/otp"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <EditText
+                android:id="@+id/countrycode"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/forty_five"
+                android:layout_marginLeft="@dimen/twenty"
+                android:layout_marginTop="@dimen/twenty"
+                android:layout_weight="1"
+                android:background="@drawable/logineditback1"
+                android:drawablePadding="@dimen/twenty"
+                android:elevation="5dp"
+                android:ems="10"
+                android:imeOptions="actionDone"
+                android:inputType="text"
+                android:paddingLeft="10dp"
+                android:text="+91"
+                android:textColor="#000000"
+                android:textSize="@dimen/edittextsize"
+                android:textStyle="normal" />
+
+            <EditText
+                android:id="@+id/mobileNumber"
+                android:layout_width="@dimen/two_hundred_fifty"
+                android:layout_height="@dimen/forty_five"
+                android:layout_below="@id/otp"
+                android:layout_marginLeft="@dimen/four"
+                android:layout_marginTop="@dimen/twenty"
+                android:layout_marginRight="@dimen/twenty"
+                android:layout_weight="1"
+                android:background="@drawable/logineditback"
+                android:drawablePadding="@dimen/twenty"
+                android:elevation="5dp"
+                android:ems="10"
+                android:hint="UserName or Mobile No"
+                android:imeOptions="actionDone"
+                android:inputType="number"
+                android:paddingLeft="20dp"
+                android:textColor="#000000"
+                android:textSize="@dimen/edittextsize"
+                android:textStyle="normal" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_Continue"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/forty"
+            android:layout_below="@+id/number"
+            android:layout_margin="@dimen/twenty"
+            app:backgroundTint="@null"
+            android:background="@drawable/loginbuttonback"
+            android:text="Continue"
+            android:textColor="#2B2A2A"
+            android:textAllCaps="false"></Button>
+
+        <TextView
+            android:id="@+id/message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btn_Continue"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/five"
+            android:text="@string/account"
+            android:textSize="@dimen/textsize">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/message1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/message"
+            android:layout_centerHorizontal="true"
+            android:text="@string/account1"
+            android:textSize="@dimen/textsize">
+
+        </TextView>
+
+        <RelativeLayout
+            android:id="@+id/r"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/message1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/fifteen"
+            android:layout_gravity="center">
+
+            <TextView
+                android:id="@+id/police"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/five"
+                android:text="@string/logging"
+                android:textSize="@dimen/textsize">
+
+            </TextView>
+
+
+            <TextView
+                android:id="@+id/createaccount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/police"
+                android:text="@string/police"
+                android:layout_marginTop="@dimen/five"
+                android:textColor="#F6E01E"
+                android:textSize="@dimen/textsize"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

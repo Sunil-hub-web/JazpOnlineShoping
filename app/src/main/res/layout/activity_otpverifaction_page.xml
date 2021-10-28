@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".OTPVerifactionPage"
+    android:background="#F6E01E">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/five_hundred"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/loginback"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/verifaction"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/fifty"
+            android:text="@string/verifaction"
+            android:textColor="@color/black"
+            android:textSize="22sp"></TextView>
+
+        <TextView
+            android:id="@+id/enterotp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/five"
+            android:text="@string/enterOtp"
+            android:textColor="@color/black"
+            android:textSize="@dimen/edittextsize"
+            android:layout_below="@id/verifaction"></TextView>
+
+        <LinearLayout
+            android:id="@+id/otpfield"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/thirty"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/enterotp">
+
+            <in.aabhasjindal.otptextview.OtpTextView
+                android:id="@+id/otp_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                app:height="30dp"
+                app:width="50dp"
+                app:bar_enabled="true"
+                app:bar_height="1.5dp"
+                app:length="6"
+                app:bar_active_color="#F6E01E"
+                app:bar_inactive_color="@color/black"
+                app:otp_text_size="24dp" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_Verifay"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/forty"
+            android:layout_below="@+id/otpfield"
+            android:layout_margin="@dimen/twenty"
+            app:backgroundTint="@null"
+            android:background="@drawable/loginbuttonback"
+            android:text="Verifay Now"
+            android:textColor="#2B2A2A"
+            android:textAllCaps="false">
+
+        </Button>
+
+       <RelativeLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_below="@id/btn_Verifay"
+           android:layout_marginTop="@dimen/ten">
+
+           <TextView
+               android:id="@+id/timer"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="timer"
+               android:textColor="@color/black"
+               android:textSize="@dimen/textsize"
+               android:layout_marginLeft="@dimen/fifteen"></TextView>
+
+           <TextView
+               android:id="@+id/text_Changenumber"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_alignParentRight="true"
+               android:text="@string/changeNumber"
+               android:textColor="@color/black"
+               android:layout_marginRight="@dimen/fifteen"
+               android:textSize="@dimen/textsize"></TextView>
+
+       </RelativeLayout>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

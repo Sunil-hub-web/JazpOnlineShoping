@@ -162,6 +162,5 @@ public class HomePage extends Fragment implements RecyclerViewClickInterface {
 
         Toast.makeText(getContext(), productDetails.get(position).toString(), Toast.LENGTH_SHORT).show();
 
-
     }
 }

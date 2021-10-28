@@ -4,4 +4,22 @@
     <string name="home">Home</string>
     <string name="Category">Category</string>
     <string name="Account">Account</string>
+
+    <string name="signin">Sign-In</string>
+    <string name="signup">Sign_Up</string>
+    <string name="mobilenumber">Mobile Number</string>
+    <string name="otp">OTP will be send to the entered mobile number</string>
+    <string name="logging">By logging in your aggree to</string>
+    <string name="police">Our Policies</string>
+
+    <string name="creating">By creating your aggree to</string>
+    <string name="account">This account will be created on jazp, incase you already </string>
+    <string name="account1">have a jazp account login with jazp</string>
+
+
+    <string name="verifaction">Verification</string>
+    <string name="enterOtp">Enter Your OTP Here</string>
+    <string name="changeNumber">Change Number</string>
+
+
 </resources>

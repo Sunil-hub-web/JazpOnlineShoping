@@ -10,27 +10,27 @@
        android:layout_height="wrap_content"
        android:src="@drawable/baseline_menu"
        android:layout_alignParentRight="true"
-       android:layout_marginTop="10dp"
+       android:layout_marginTop="@dimen/ten"
        android:onClick="Clickmenu"
-       android:layout_marginRight="30dp">
+       android:layout_marginRight="@dimen/thirty">
 
    </ImageView>
 
    <ImageView
        android:id="@+id/imagecart"
-       android:layout_width="25dp"
-       android:layout_height="25dp"
+       android:layout_width="@dimen/twenty_five"
+       android:layout_height="@dimen/twenty_five"
        android:src="@drawable/cartimage"
-       android:layout_marginTop="5dp"
+       android:layout_marginTop="@dimen/five"
        android:layout_toLeftOf="@id/menu"
-       android:layout_marginRight="20dp">
+       android:layout_marginRight="@dimen/twenty">
 
    </ImageView>
 
    <ImageView
        android:id="@+id/search"
-       android:layout_width="30dp"
-       android:layout_height="30dp"
+       android:layout_width="@dimen/thirty"
+       android:layout_height="@dimen/thirty"
        android:src="@drawable/baseline_search"
        android:layout_marginTop="5dp"
        android:layout_toLeftOf="@id/imagecart"

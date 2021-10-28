@@ -27,14 +27,14 @@
                     android:id="@+id/viewPager"
                     android:layout_width="match_parent"
                     android:layout_height="@dimen/hundred_eighty"
-                    android:layout_margin="10dp"></androidx.viewpager.widget.ViewPager>
+                    android:layout_margin="@dimen/fifteen"></androidx.viewpager.widget.ViewPager>
 
                 <TextView
                     android:id="@+id/category"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_below="@id/viewPager"
-                    android:layout_margin="10dp"
+                    android:layout_margin="@dimen/ten"
                     android:text="All catigories"
                     android:textColor="#000000"
                     android:textSize="20dp"
@@ -45,13 +45,13 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_below="@id/category"
-                        android:layout_marginTop="10dp">
+                        android:layout_marginTop="@dimen/ten">
 
                         <androidx.recyclerview.widget.RecyclerView
                             android:id="@+id/recycler2"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
-                            android:layout_marginTop="10dp">
+                            android:layout_marginTop="@dimen/ten">
 
                         </androidx.recyclerview.widget.RecyclerView>
 
@@ -63,7 +63,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_below="@id/first"
-                    android:layout_margin="10dp"
+                    android:layout_margin="@dimen/ten"
                     android:text="Top Brands"
                     android:textColor="#000000"
                     android:textSize="20dp"
@@ -74,7 +74,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_below="@id/category1"
-                    android:layout_marginTop="10dp"
+                    android:layout_marginTop="@dimen/ten"
                     android:scrollbars="none">
 
                     <RelativeLayout
@@ -194,7 +194,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_below="@id/brands"
-                    android:layout_margin="10dp"
+                    android:layout_margin="@dimen/ten"
                     android:text="MOBILES &amp; TABLETS"
                     android:textColor="#000000"
                     android:textSize="20dp"
@@ -210,7 +210,7 @@
                         android:id="@+id/recycler"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:layout_marginTop="10dp">
+                        android:layout_marginTop="@dimen/ten">
 
                     </androidx.recyclerview.widget.RecyclerView>
                 </RelativeLayout>
@@ -220,7 +220,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_below="@id/mobile"
-                    android:layout_margin="10dp"
+                    android:layout_margin="@dimen/ten"
                     android:text="TELEVISIONS &amp; SMART TV'S"
                     android:textColor="#000000"
                     android:textSize="20dp"
@@ -236,7 +236,7 @@
                         android:id="@+id/recycler1"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:layout_marginTop="10dp">
+                        android:layout_marginTop="@dimen/ten">
 
                     </androidx.recyclerview.widget.RecyclerView>
                 </RelativeLayout>

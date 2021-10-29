@@ -116,7 +116,6 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         reDirectActivity(this,LoginPage.class);
 
     }
-
     public static void reDirectActivity(Activity activity, Class aclass){
 
         Intent intent = new Intent(activity,aclass);
@@ -124,4 +123,5 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         activity.startActivity(intent);
 
     }
+
 }

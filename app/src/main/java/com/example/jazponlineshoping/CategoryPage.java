@@ -24,6 +24,7 @@ public class CategoryPage extends AppCompatActivity {
     MobilesAndTabletsAdapter mobilesAndTabletsAdapter;
     TELEVISIONSSMARTTVAdapter televisionssmarttvAdapter;
     ImageView img_Lenovo,img_Hp;
+    DrawerLayout mydrawer;
     int [] images = {R.drawable.mob2,R.drawable.mob3,R.drawable.mob4,R.drawable.mob6,R.drawable.mob7};
     int [] images1 = {R.drawable.tv2,R.drawable.tv3,R.drawable.tv4,R.drawable.tv5,R.drawable.tv6,R.drawable.tv7};
 
@@ -36,6 +37,7 @@ public class CategoryPage extends AppCompatActivity {
         img_Lenovo = findViewById(R.id.img_Lenovo);
         img_Hp = findViewById(R.id.img_Hp);
         bottomNavigation = findViewById(R.id.bottomNavigation);
+        mydrawer = findViewById(R.id.mydrawer);
 
         img_Lenovo.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -94,6 +96,22 @@ public class CategoryPage extends AppCompatActivity {
                 return false;
             }
         });
+
+    }
+
+    public void Clickmenu(View view){
+        // open drawer
+        openDrawer(mydrawer);
+    }
+
+    private static void openDrawer(DrawerLayout drawerLayout){
+        // opendrawer layout
+        drawerLayout.openDrawer(GravityCompat.END);
+    }
+
+    public void SignInUp(View view){
+
+        MainActivity.reDirectActivity(this,LoginPage.class);
 
     }
 

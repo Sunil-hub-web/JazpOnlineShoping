@@ -6,6 +6,7 @@ import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.fragment.app.FragmentTransaction;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
@@ -20,40 +21,44 @@ import org.jetbrains.annotations.NotNull;
 
 public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener{
 
-    private DrawerLayout mydrawer;
-    NavigationView navigationView;
     BottomNavigationView bottomNavigation;
     Button btn_SignInSignUP;
+    DrawerLayout mydrawer;
+    NavigationView navigationView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        mydrawer = findViewById(R.id.myDraw);
-        bottomNavigation = findViewById(R.id.bottomNavigation);
+       mydrawer = findViewById(R.id.myDraw);
+       navigationView = findViewById(R.id.navigationview);
 
-        navigationView = findViewById(R.id.navigationview);
+       navigationView.setNavigationItemSelectedListener(this);
+       View header = navigationView.getHeaderView(0);
 
-        navigationView.setNavigationItemSelectedListener(this);
-        View header = navigationView.getHeaderView(0);
+       btn_SignInSignUP = header.findViewById(R.id.nav_SignInSignUP);
 
-        btn_SignInSignUP = header.findViewById(R.id.nav_SignInSignUP);
+       bottomNavigation = findViewById(R.id.bottomNavigation);
 
-        btn_SignInSignUP.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-                Intent intent = new Intent(MainActivity.this,LoginPage.class);
-                startActivity(intent);
-
-            }
-        });
 
         FragmentTransaction ft = getSupportFragmentManager().beginTransaction();
         HomePage home = new HomePage();
         ft.replace(R.id.frame, home,"testID");
         ft.commit();
+
+      /*  btn_SignInSignUP.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                mydrawer.closeDrawer(GravityCompat.END);
+
+                Intent intent = new Intent(MainActivity.this,LoginPage.class);
+                startActivity(intent);
+            }
+        });*/
+
+
 
         bottomNavigation.setSelectedItemId(R.id.home);
 
@@ -89,7 +94,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
     @Override
     public boolean onNavigationItemSelected(@NonNull @NotNull MenuItem item) {
-        mydrawer.closeDrawer(GravityCompat.START);
+        mydrawer.closeDrawer(GravityCompat.END);
 
         return true;
     }
@@ -103,6 +108,20 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     private static void openDrawer(DrawerLayout drawerLayout){
 
         // opendrawer layout
-        drawerLayout.openDrawer(GravityCompat.START);
+        drawerLayout.openDrawer(GravityCompat.END);
+    }
+
+    public void SignInUp(View view){
+
+        reDirectActivity(this,LoginPage.class);
+
+    }
+
+    public static void reDirectActivity(Activity activity, Class aclass){
+
+        Intent intent = new Intent(activity,aclass);
+        intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+        activity.startActivity(intent);
+
     }
 }

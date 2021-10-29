@@ -73,7 +73,8 @@
             android:text="SignIn &amp; SignUP"
             android:textColor="#F8E339"
             android:textAllCaps="false"
-            android:textSize="@dimen/textsize"></Button>
+            android:textSize="@dimen/textsize"
+            android:onClick="SignInUp"></Button>
 
     </RelativeLayout>
 

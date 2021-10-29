@@ -3,15 +3,18 @@ package com.example.jazponlineshoping;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.FragmentTransaction;
 
+import android.content.Intent;
 import android.graphics.Canvas;
 import android.graphics.Paint;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 public class LoginPage extends AppCompatActivity {
 
     TextView text_Signin,text_Signup;
+    ImageView img_Back;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,6 +23,7 @@ public class LoginPage extends AppCompatActivity {
 
         text_Signin = findViewById(R.id.signin);
         text_Signup = findViewById(R.id.signup);
+        img_Back = findViewById(R.id.img_Back);
 
         text_Signin.setBackgroundResource(R.drawable.loginstock);
 
@@ -56,6 +60,15 @@ public class LoginPage extends AppCompatActivity {
                 ft.replace(R.id.frame, signinpage,"testID");
                 ft.commit();
 
+            }
+        });
+
+        img_Back.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent intent = new Intent(LoginPage.this,MainActivity.class);
+                startActivity(intent);
             }
         });
 

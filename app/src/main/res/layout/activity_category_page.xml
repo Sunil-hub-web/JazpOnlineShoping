@@ -1,25 +1,49 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.drawerlayout.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".CategoryPage">
+    tools:context=".CategoryPage"
+    android:id="@+id/mydrawer">
 
     <RelativeLayout
-        android:layout_width="wrap_content"
+        android:layout_width="300dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="end"
+        android:background="@color/white">
+
+        <include
+            android:id="@+id/include"
+            layout="@layout/nav_header"></include>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
         android:layout_height="match_parent">
+
+            <include
+                android:id="@+id/include"
+                layout="@layout/tollbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"></include>
 
         <ScrollView
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:id="@+id/scroll"
-            android:scrollbars="none">
+            android:scrollbars="none"
+            android:layout_below="@id/include"
+            android:layout_marginTop="@dimen/five">
 
             <LinearLayout
                 android:layout_width="@dimen/hundred_ten"
                 android:layout_height="match_parent"
-                android:orientation="vertical">
+                android:orientation="vertical"
+                android:layout_marginTop="@dimen/ten">
 
                     <ImageView
                         android:id="@+id/onepluse"
@@ -148,7 +172,8 @@
             android:layout_height="match_parent"
             android:background="#4E4D4D"
             android:layout_marginLeft="@dimen/five"
-            android:layout_toRightOf="@+id/scroll"/>
+            android:layout_toRightOf="@+id/scroll"
+            android:layout_below="@id/include"/>
 
         <androidx.recyclerview.widget.RecyclerView
             android:layout_width="match_parent"
@@ -156,23 +181,27 @@
             android:layout_toRightOf="@+id/view"
             android:layout_marginLeft="@dimen/five"
             android:layout_marginTop="@dimen/ten"
-            android:id="@+id/showProductrecycler">
+            android:id="@+id/showProductrecycler"
+            android:layout_below="@+id/include">
 
         </androidx.recyclerview.widget.RecyclerView>
 
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottomNavigation"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:background="#EDEAEA"
+            app:itemIconTint="@drawable/selector"
+            app:itemTextColor="@drawable/selector"
+            android:fitsSystemWindows="true"
+            app:menu="@menu/menu_navigation">
+
+        </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+
     </RelativeLayout>
 
-    <com.google.android.material.bottomnavigation.BottomNavigationView
-        android:id="@+id/bottomNavigation"
-        android:layout_width="wrap_content"
-        android:layout_height="50dp"
-        android:layout_alignParentBottom="true"
-        android:background="#EDEAEA"
-        app:itemIconTint="@drawable/selector"
-        app:itemTextColor="@drawable/selector"
-        android:fitsSystemWindows="true"
-        app:menu="@menu/menu_navigation">
 
-    </com.google.android.material.bottomnavigation.BottomNavigationView>
 
-</RelativeLayout>
+</androidx.drawerlayout.widget.DrawerLayout>

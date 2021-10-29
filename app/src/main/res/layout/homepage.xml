@@ -44,8 +44,7 @@
                         android:id="@+id/first"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_below="@id/category"
-                        android:layout_marginTop="@dimen/ten">
+                        android:layout_below="@id/category">
 
                         <androidx.recyclerview.widget.RecyclerView
                             android:id="@+id/recycler2"

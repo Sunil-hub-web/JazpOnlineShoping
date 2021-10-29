@@ -48,6 +48,7 @@
     <dimen name="hundred_ninety">285dp</dimen>
     <dimen name="two_hundred">300dp</dimen>
     <dimen name="three_hundred">450dp</dimen>
+    <dimen name="three_hundred_fifty">525dp</dimen>
     <dimen name="four_hundred">600dp</dimen>
     <dimen name="five_hundred">750dp</dimen>
 

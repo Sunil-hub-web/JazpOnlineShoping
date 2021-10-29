@@ -50,6 +50,7 @@
     <dimen name="two_hundred_fifty">375dp</dimen>
 
     <dimen name="three_hundred">450dp</dimen>
+    <dimen name="three_hundred_fifty">525dp</dimen>
     <dimen name="four_hundred">600dp</dimen>
     <dimen name="five_hundred">750dp</dimen>
 

@@ -21,5 +21,13 @@
     <string name="enterOtp">Enter Your OTP Here</string>
     <string name="changeNumber">Change Number</string>
 
+    <string name="Country">Country</string>
+    <string name="ReturnPolicy">Return Policy</string>
+    <string name="PrivacyPolicy">Privacy Policy</string>
+    <string name="AppInfo">App Info</string>
+    <string name="Signout">Sign Out</string>
+    <string name="Tandc">Terms &amp; Conditions</string>
+    <string name="Update">Update</string>
+
 
 </resources>

@@ -1,4 +1,4 @@
-package com.example.jazponlineshoping;
+package com.example.jazponlineshoping.fragment;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -11,17 +11,18 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
-public class SignUpPage extends Fragment {
+import com.example.jazponlineshoping.OTPVerifactionPage;
+import com.example.jazponlineshoping.R;
+
+public class SignInPage extends Fragment {
 
     Button btn_Continue;
 
     @Nullable
     @Override
-    public View onCreateView(@NonNull LayoutInflater inflater,
-                             @Nullable ViewGroup container,
-                             @Nullable  Bundle savedInstanceState) {
+    public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
 
-        View view = inflater.inflate(R.layout.signuppage,container,false);
+        View view = inflater.inflate(R.layout.signinpage,container,false);
 
         btn_Continue = view.findViewById(R.id.btn_Continue);
 
@@ -29,11 +30,10 @@ public class SignUpPage extends Fragment {
             @Override
             public void onClick(View v) {
 
-                Intent intent = new Intent(getContext(),OTPVerifactionPage.class);
+                Intent intent = new Intent(getContext(), OTPVerifactionPage.class);
                 startActivity(intent);
             }
         });
-
 
         return view;
     }

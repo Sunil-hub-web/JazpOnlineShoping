@@ -4,12 +4,13 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.FragmentTransaction;
 
 import android.content.Intent;
-import android.graphics.Canvas;
-import android.graphics.Paint;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
+
+import com.example.jazponlineshoping.fragment.SignInPage;
+import com.example.jazponlineshoping.fragment.SignUpPage;
 
 public class LoginPage extends AppCompatActivity {
 

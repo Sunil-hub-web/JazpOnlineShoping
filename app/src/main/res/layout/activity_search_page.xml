@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SearchPage">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/fifty"
+        android:background="#F6E01E">
+
+        <ImageView
+            android:layout_width="@dimen/eighteen"
+            android:layout_height="@dimen/eighteen"
+            android:src="@drawable/arrow"
+            android:layout_margin="@dimen/fifteen"
+            android:id="@+id/img_Back"></ImageView>
+        <ImageView
+            android:id="@+id/imagecart"
+            android:layout_width="@dimen/twenty"
+            android:layout_height="@dimen/twenty"
+            android:src="@drawable/cartimage"
+            android:layout_marginTop="@dimen/five"
+            android:layout_marginRight="@dimen/ten"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"></ImageView>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/thirty_five"
+            android:layout_toRightOf="@id/img_Back"
+            android:layout_toLeftOf="@id/imagecart"
+            android:background="@drawable/serachback"
+            android:layout_marginRight="@dimen/ten"
+            android:layout_centerVertical="true"
+            android:drawableRight="@drawable/search"
+            android:paddingRight="@dimen/ten"
+            android:textSize="@dimen/textsize"
+            android:hint="Serach Products,Brands &amp; More"
+            android:drawablePadding="@dimen/twenty"
+            android:paddingLeft="@dimen/ten"></EditText>
+    </RelativeLayout>
+
+</RelativeLayout>

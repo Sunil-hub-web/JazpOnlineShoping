@@ -12,6 +12,7 @@ import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
@@ -25,6 +26,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     Button btn_SignInSignUP;
     DrawerLayout mydrawer;
     NavigationView navigationView;
+    ImageView img_Back;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,6 +35,9 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
        mydrawer = findViewById(R.id.myDraw);
        navigationView = findViewById(R.id.navigationview);
+       img_Back = findViewById(R.id.img_Back);
+
+       img_Back.setVisibility(View.GONE);
 
        navigationView.setNavigationItemSelectedListener(this);
        View header = navigationView.getHeaderView(0);
@@ -116,6 +121,18 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         reDirectActivity(this,LoginPage.class);
 
     }
+    public void Serachpage(View view){
+
+        reDirectActivity(this,SearchPage.class);
+
+    }
+
+    public void Cartpage(View view){
+
+       reDirectActivity(this,Cartpage.class);
+
+    }
+
     public static void reDirectActivity(Activity activity, Class aclass){
 
         Intent intent = new Intent(activity,aclass);

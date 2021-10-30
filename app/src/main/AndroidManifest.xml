@@ -10,11 +10,23 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.JazpOnlineShoping">
         <activity
-            android:name=".CategoryPage"
+            android:name=".ProductDetailsActivity"
             android:theme="@style/Theme.JazpOnlineShoping.NoActionBar"></activity>
         <activity
-            android:name=".OTPVerifactionPage"
+            android:name=".ProductDescription"
             android:theme="@style/Theme.JazpOnlineShoping.NoActionBar"></activity>
+        <activity
+            android:name=".Cartpage"
+            android:theme="@style/Theme.JazpOnlineShoping.NoActionBar" />
+        <activity
+            android:name=".SearchPage"
+            android:theme="@style/Theme.JazpOnlineShoping.NoActionBar" />
+        <activity
+            android:name=".CategoryPage"
+            android:theme="@style/Theme.JazpOnlineShoping.NoActionBar" />
+        <activity
+            android:name=".OTPVerifactionPage"
+            android:theme="@style/Theme.JazpOnlineShoping.NoActionBar" />
         <activity
             android:name=".LoginPage"
             android:theme="@style/Theme.JazpOnlineShoping.NoActionBar" />

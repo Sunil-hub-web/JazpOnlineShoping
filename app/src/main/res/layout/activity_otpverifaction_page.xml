@@ -48,14 +48,14 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textColor="#000000"
-                app:height="30dp"
-                app:width="50dp"
+                app:height="@dimen/thirty"
+                app:width="@dimen/fifty"
                 app:bar_enabled="true"
                 app:bar_height="1.5dp"
                 app:length="6"
                 app:bar_active_color="#F6E01E"
                 app:bar_inactive_color="@color/black"
-                app:otp_text_size="24dp" />
+                app:otp_text_size="@dimen/twenty_five" />
 
         </LinearLayout>
 

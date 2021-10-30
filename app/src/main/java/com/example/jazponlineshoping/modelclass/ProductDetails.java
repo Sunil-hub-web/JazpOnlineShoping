@@ -1,4 +1,4 @@
-package com.example.jazponlineshoping;
+package com.example.jazponlineshoping.modelclass;
 
 public class ProductDetails {
 

@@ -18,30 +18,26 @@
             android:layout_margin="@dimen/eight">
 
             <ImageView
-                android:id="@+id/product_image"
+                android:id="@+id/product_Image"
                 android:layout_width="@dimen/hundred_twenty"
                 android:layout_height="@dimen/hundred_twenty"
                 android:scaleType="fitCenter"
-                android:src="@drawable/mob2"
-                android:layout_centerHorizontal="true">
-
-            </ImageView>
+                android:src="@drawable/tv2"
+                android:layout_centerHorizontal="true"></ImageView>
 
             <TextView
-                android:id="@+id/topProduct"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@id/product_image"
+                android:id="@+id/productName"
+                android:layout_width="@dimen/hundred_twenty"
+                android:layout_height="@dimen/thirty_five"
+                android:layout_below="@id/product_Image"
                 android:layout_marginTop="@dimen/ten"
                 android:text="INR 650"
                 android:layout_centerHorizontal="true"
-                android:textColor="#E13A06"
+                android:textColor="#FFC107"
+                android:gravity="center"
                 android:textSize="@dimen/textsize"
                 android:textStyle="bold"
-                android:maxEms="7"
-                android:ellipsize="end"
-                android:singleLine="true"
-                android:scrollHorizontally="true"/>
+                android:background="@drawable/categorytextback"/>
 
         </RelativeLayout>
 

@@ -32,6 +32,7 @@
     <dimen name="twenty_eight">28dp</dimen>
     <dimen name="twenty_nine">29dp</dimen>
     <dimen name="thirty">30dp</dimen>
+    <dimen name="thirty_five">35dp</dimen>
     <dimen name="forty">40dp</dimen>
     <dimen name="forty_five">45dp</dimen>
     <dimen name="fifty">50dp</dimen>

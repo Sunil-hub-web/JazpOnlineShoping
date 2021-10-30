@@ -1,6 +1,7 @@
-package com.example.jazponlineshoping;
+package com.example.jazponlineshoping.adapter;
 
 import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -8,6 +9,9 @@ import android.widget.ImageView;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
+
+import com.example.jazponlineshoping.ProductDetailsActivity;
+import com.example.jazponlineshoping.R;
 
 public class MobilesAndTabletsAdapter extends RecyclerView.Adapter<MobilesAndTabletsAdapter.ViewModel> {
 

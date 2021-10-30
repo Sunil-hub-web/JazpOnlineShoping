@@ -1,6 +1,7 @@
-package com.example.jazponlineshoping;
+package com.example.jazponlineshoping.adapter;
 
 import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -8,6 +9,9 @@ import android.widget.ImageView;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
+
+import com.example.jazponlineshoping.ProductDetailsActivity;
+import com.example.jazponlineshoping.R;
 
 public class TELEVISIONSSMARTTVAdapter extends RecyclerView.Adapter<TELEVISIONSSMARTTVAdapter.MyViewholder> {
 
@@ -32,6 +36,15 @@ public class TELEVISIONSSMARTTVAdapter extends RecyclerView.Adapter<TELEVISIONSS
     public void onBindViewHolder(@NonNull TELEVISIONSSMARTTVAdapter.MyViewholder holder, int position) {
 
         holder.product_image.setImageResource(image[position]);
+
+        holder.product_image.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent intent = new Intent(context, ProductDetailsActivity.class);
+                context.startActivity(intent);
+            }
+        });
 
     }
 

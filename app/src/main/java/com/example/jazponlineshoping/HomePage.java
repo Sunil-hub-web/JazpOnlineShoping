@@ -7,6 +7,7 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
@@ -15,6 +16,10 @@ import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 import androidx.viewpager.widget.ViewPager;
+
+import com.example.jazponlineshoping.adapter.MobilesAndTabletsAdapter;
+import com.example.jazponlineshoping.adapter.TELEVISIONSSMARTTVAdapter;
+import com.example.jazponlineshoping.modelclass.ProductDetails;
 
 import java.util.ArrayList;
 import java.util.Timer;
@@ -34,6 +39,7 @@ public class HomePage extends Fragment implements RecyclerViewClickInterface {
     LinearLayoutManager linearLayoutManager,linearLayoutManager1,linearLayoutManager2;
     int [] images = {R.drawable.mob2,R.drawable.mob3,R.drawable.mob4,R.drawable.mob6,R.drawable.mob7};
     TELEVISIONSSMARTTVAdapter televisionssmarttvAdapter;
+    ImageView img_Back;
 
     ArrayList<Integer> images2 = new ArrayList<Integer>();
     ArrayList<String> productname = new ArrayList<String>();
@@ -84,6 +90,10 @@ public class HomePage extends Fragment implements RecyclerViewClickInterface {
         recyclerView = view.findViewById(R.id.recycler);
         recyclerView1 = view.findViewById(R.id.recycler1);
         recyclerView2 = view.findViewById(R.id.recycler2);
+        img_Back = view.findViewById(R.id.img_Back);
+
+        img_Back.setVisibility(View.GONE);
+
         linearLayoutManager = new LinearLayoutManager(getContext(),LinearLayoutManager.HORIZONTAL,false);
 
         mobilesAndTabletsAdapter = new MobilesAndTabletsAdapter(getContext(), images);

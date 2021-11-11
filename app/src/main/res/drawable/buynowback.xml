@@ -4,8 +4,8 @@
 
     <gradient
         android:angle="135"
-        android:endColor="#FF5722"
-        android:startColor="#FF5722"
+        android:endColor="#DFD153"
+        android:startColor="#DFD153"
         android:type="linear" />
 
     <corners android:radius="5dp" />

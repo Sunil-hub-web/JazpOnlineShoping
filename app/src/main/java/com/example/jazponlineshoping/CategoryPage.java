@@ -34,8 +34,6 @@ public class CategoryPage extends AppCompatActivity {
     ArrayList<MobileDetails_ModelClass> mobileImage = new ArrayList<>();
     ArrayList<TelevisionDetails_ModelClass> televisionImage = new ArrayList<>();
 
-    int [] images1 = {R.drawable.tv2,R.drawable.tv3,R.drawable.tv4,R.drawable.tv5,R.drawable.tv6,R.drawable.tv7};
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -48,11 +46,11 @@ public class CategoryPage extends AppCompatActivity {
         mydrawer = findViewById(R.id.mydrawer);
         img_Back = findViewById(R.id.img_Back);
 
-        mobileImage.add(new MobileDetails_ModelClass("Mobile1",R.drawable.mob2));
-        mobileImage.add(new MobileDetails_ModelClass("Mobile2",R.drawable.mob3));
-        mobileImage.add(new MobileDetails_ModelClass("Mobile3",R.drawable.mob4));
-        mobileImage.add(new MobileDetails_ModelClass("Mobile4",R.drawable.mob6));
-        mobileImage.add(new MobileDetails_ModelClass("Mobile5",R.drawable.mob7));
+        mobileImage.add(new MobileDetails_ModelClass("MobilePhone",R.drawable.mob2));
+        mobileImage.add(new MobileDetails_ModelClass("Tablets",R.drawable.download_dd));
+        mobileImage.add(new MobileDetails_ModelClass("Tablets Accessories",R.drawable.laptop_accessories));
+        mobileImage.add(new MobileDetails_ModelClass("Mobile  Accessories",R.drawable.images_ddd));
+        mobileImage.add(new MobileDetails_ModelClass("Smart Wearable",R.drawable.smart));
 
         televisionImage.add(new TelevisionDetails_ModelClass("Television1",R.drawable.tv2));
         televisionImage.add(new TelevisionDetails_ModelClass("Television2",R.drawable.tv3));

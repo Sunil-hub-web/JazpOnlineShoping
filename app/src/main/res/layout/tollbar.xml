@@ -54,7 +54,7 @@
        android:layout_width="wrap_content"
        android:layout_height="wrap_content"
        android:textColor="#0A22A1"
-       android:textSize="20dp"
+       android:textSize="@dimen/edittextsize"
        android:text="Home"
        android:layout_marginTop="@dimen/five"
        android:layout_marginLeft="@dimen/twenty"

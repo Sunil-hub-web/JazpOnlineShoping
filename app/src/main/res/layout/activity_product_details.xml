@@ -7,20 +7,40 @@
     tools:context=".ProductDetailsActivity"
     android:id="@+id/myDraw">
 
-    <LinearLayout
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
-        <include layout="@layout/tollbar"></include>
 
-    </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tool"
+            android:layout_alignParentTop="true">
 
-    <ImageView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:src="@drawable/no_result">
+            <include layout="@layout/tollbar"></include>
 
-    </ImageView>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/noproduct"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/no_result"
+            android:visibility="gone"
+            android:layout_centerInParent="true"></ImageView>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/productRecycler"
+            android:layout_below="@+id/tool"
+            android:layout_marginTop="@dimen/ten">
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+
+    </RelativeLayout>
 
     <RelativeLayout
         android:layout_width="@dimen/three_hundred_fifty"

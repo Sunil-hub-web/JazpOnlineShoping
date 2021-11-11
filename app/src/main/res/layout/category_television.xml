@@ -33,7 +33,7 @@
                 android:layout_marginTop="@dimen/ten"
                 android:text="INR 650"
                 android:layout_centerHorizontal="true"
-                android:textColor="#FFC107"
+                android:textColor="#FFFFFF"
                 android:gravity="center"
                 android:textSize="@dimen/textsize"
                 android:textStyle="bold"

@@ -44,40 +44,49 @@ public class ProductDetailsActivity extends AppCompatActivity {
 
         text_cart.setText(name);
 
-         if(name.equals("MobilePhone")){
+        if (name != null) {
 
-            productDetails.add(new Productdetails_ModelClass("Redmi 9 (Sky Blue, 4GB RAM, 64GB Storage)","₹8,790",R.drawable.imagesuu));
-            productDetails.add(new Productdetails_ModelClass("OPPO A12 4 GB 64 GB Blue","₹10,899",R.drawable.imageshh));
-            productDetails.add(new Productdetails_ModelClass("Samsung Galaxy M32 5G (Slate Black, 6GB RAM, 128GB Storage)","₹16,999.00",R.drawable.down));
-            productDetails.add(new Productdetails_ModelClass("OnePlus 9 5G (Astral Black, 8GB RAM, 128GB Storage)","₹46,999.00",R.drawable.android_samsung));
+            if (name.equals("MobilePhone")) {
 
-            gridLayoutManager = new GridLayoutManager(ProductDetailsActivity.this,2,GridLayoutManager.VERTICAL,false);
-            productDetailsAdapter = new CategoryProductDetailsAdapter(ProductDetailsActivity.this, productDetails);
-            productRecycler.setLayoutManager (gridLayoutManager);
-            productRecycler.setHasFixedSize (true);
-            productRecycler.setAdapter (productDetailsAdapter);
+                productDetails.add(new Productdetails_ModelClass("Redmi 9 (Sky Blue, 4GB RAM, 64GB Storage)", "₹8,790", R.drawable.imagesuu));
+                productDetails.add(new Productdetails_ModelClass("OPPO A12 4 GB 64 GB Blue", "₹10,899", R.drawable.imageshh));
+                productDetails.add(new Productdetails_ModelClass("Samsung Galaxy M32 5G (Slate Black, 6GB RAM, 128GB Storage)", "₹16,999.00", R.drawable.down));
+                productDetails.add(new Productdetails_ModelClass("OnePlus 9 5G (Astral Black, 8GB RAM, 128GB Storage)", "₹46,999.00", R.drawable.android_samsung));
 
-            } else if(name.equals("Tablets") || name.equals("Smart Wearable") || name.equals("Tablets Accessories")
-                     || name.equals("Mobile  Accessories")){
+                gridLayoutManager = new GridLayoutManager(ProductDetailsActivity.this, 2, GridLayoutManager.VERTICAL, false);
+                productDetailsAdapter = new CategoryProductDetailsAdapter(ProductDetailsActivity.this, productDetails);
+                productRecycler.setLayoutManager(gridLayoutManager);
+                productRecycler.setHasFixedSize(true);
+                productRecycler.setAdapter(productDetailsAdapter);
 
-             if(productDetails.size()==0){
+            } else if (name.equals("Tablets") || name.equals("Smart Wearable") || name.equals("Tablets Accessories")
+                    || name.equals("Mobile  Accessories")) {
 
-                 noproduct.setVisibility(View.VISIBLE);
-                 productRecycler.setVisibility(View.GONE);
+                if (productDetails.size() == 0) {
 
-             }
+                    noproduct.setVisibility(View.VISIBLE);
+                    productRecycler.setVisibility(View.GONE);
 
-         }else if(name.equals("Television1") || name.equals("Television2") || name.equals("Television3")
-                 || name.equals("Television4") || name.equals("Television5") || name.equals("Television6")){
+                }
 
-        if(productDetails.size()==0){
+            } else if (name.equals("Television1") || name.equals("Television2") || name.equals("Television3")
+                    || name.equals("Television4") || name.equals("Television5") || name.equals("Television6")) {
+
+                if (productDetails.size() == 0) {
+
+                    noproduct.setVisibility(View.VISIBLE);
+                    productRecycler.setVisibility(View.GONE);
+
+                }
+
+            }
+
+
+        } else {
 
             noproduct.setVisibility(View.VISIBLE);
             productRecycler.setVisibility(View.GONE);
-
         }
-
-    }
 
        /* gridLayoutManager = new GridLayoutManager(ProductDetailsActivity.this,2,GridLayoutManager.VERTICAL,false);
         productDetailsAdapter = new CategoryProductDetailsAdapter(ProductDetailsActivity.this, productDetails);
@@ -87,37 +96,37 @@ public class ProductDetailsActivity extends AppCompatActivity {
 
     }
 
-    public void Clickmenu(View view){
+    public void Clickmenu(View view) {
         // open drawer
         openDrawer(mydrawer);
     }
 
-    private static void openDrawer(DrawerLayout drawerLayout){
+    private static void openDrawer(DrawerLayout drawerLayout) {
         // opendrawer layout
         drawerLayout.openDrawer(GravityCompat.END);
     }
 
-    public void SignInUp(View view){
+    public void SignInUp(View view) {
 
-        MainActivity.reDirectActivity(this,LoginPage.class);
-
-    }
-
-    public void Serachpage(View view){
-
-        MainActivity.reDirectActivity(this,SearchPage.class);
+        MainActivity.reDirectActivity(this, LoginPage.class);
 
     }
 
-    public void Cartpage(View view){
+    public void Serachpage(View view) {
+
+        MainActivity.reDirectActivity(this, SearchPage.class);
+
+    }
+
+    public void Cartpage(View view) {
 
         recreate();
 
     }
 
-    public void ImageBack(View view){
+    public void ImageBack(View view) {
 
-        MainActivity.reDirectActivity(this,CategoryPage.class);
+        MainActivity.reDirectActivity(this, CategoryPage.class);
 
     }
 

@@ -11,7 +11,7 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
-import com.example.jazponlineshoping.OTPVerifactionPage;
+import com.example.jazponlineshoping.activity.OTPVerifactionPage;
 import com.example.jazponlineshoping.R;
 
 public class SignUpPage extends Fragment {

@@ -2,7 +2,6 @@ package com.example.jazponlineshoping.adapter;
 
 import android.content.Context;
 import android.content.Intent;
-import android.net.Uri;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -13,10 +12,9 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.jazponlineshoping.ProductDescription;
-import com.example.jazponlineshoping.ProductDetailsActivity;
+import com.example.jazponlineshoping.activity.ProductDescription;
+import com.example.jazponlineshoping.activity.ProductDetailsActivity;
 import com.example.jazponlineshoping.R;
-import com.example.jazponlineshoping.modelclass.ProductDetails;
 import com.example.jazponlineshoping.modelclass.Productdetails_ModelClass;
 
 import org.jetbrains.annotations.NotNull;
@@ -54,15 +52,37 @@ public class CategoryProductDetailsAdapter extends RecyclerView.Adapter<Category
         holder.productName.setText(product.getName());
         holder.producPrice.setText(product.getPrice());
 
+        holder.product_Image.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                int image = product.getImage();
+                String strImage = String.valueOf(image);
+
+                Intent intent = new Intent(context, ProductDescription.class);
+                intent.putExtra("productname",product.getName());
+                intent.putExtra("productprice",product.getPrice());
+
+                intent.putExtra("productimage",strImage);
+                //intent.putExtra("productimage",product.getImage());
+                context.startActivity(intent);
+
+            }
+        });
 
 
         holder.addToCart.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
+                int image = product.getImage();
+                String strImage = String.valueOf(image);
+
                 Intent intent = new Intent(context, ProductDescription.class);
                 intent.putExtra("productname",product.getName());
                 intent.putExtra("productprice",product.getPrice());
+
+                intent.putExtra("productimage",strImage);
                 //intent.putExtra("productimage",product.getImage());
                 context.startActivity(intent);
             }

@@ -4,13 +4,12 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ProductDetailsActivity"
+    tools:context=".activity.ProductDetailsActivity"
     android:id="@+id/myDraw">
 
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
-
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -22,13 +21,14 @@
 
         </LinearLayout>
 
+
         <ImageView
             android:id="@+id/noproduct"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:src="@drawable/no_result"
-            android:visibility="gone"
-            android:layout_centerInParent="true"></ImageView>
+            android:layout_centerInParent="true"
+            android:src="@drawable/noproduct"
+            android:visibility="gone"></ImageView>
 
         <androidx.recyclerview.widget.RecyclerView
             android:layout_width="match_parent"

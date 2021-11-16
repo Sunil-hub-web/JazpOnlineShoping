@@ -10,7 +10,7 @@ import android.widget.ImageView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.jazponlineshoping.ProductDetailsActivity;
+import com.example.jazponlineshoping.activity.ProductDetailsActivity;
 import com.example.jazponlineshoping.R;
 
 public class TELEVISIONSSMARTTVAdapter extends RecyclerView.Adapter<TELEVISIONSSMARTTVAdapter.MyViewholder> {

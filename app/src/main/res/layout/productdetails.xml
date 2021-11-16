@@ -8,7 +8,7 @@
     <RelativeLayout
         android:id="@+id/rr1"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="@dimen/two_hundred_fifty"
         android:layout_marginLeft="10dp"
         android:background="@drawable/homecard_back"
         android:layout_marginBottom="10dp">
@@ -21,8 +21,8 @@
 
             <ImageView
                 android:id="@+id/product_Image"
-                android:layout_width="@dimen/hundred_twenty"
-                android:layout_height="@dimen/hundred_twenty"
+                android:layout_width="@dimen/hundred_ten"
+                android:layout_height="@dimen/hundred_ten"
                 android:scaleType="fitCenter"
                 android:src="@drawable/mob2"
                 android:layout_centerHorizontal="true">
@@ -34,10 +34,10 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/product_Image"
-                android:layout_marginTop="@dimen/ten"
+                android:layout_marginTop="@dimen/five"
                 android:text="Mobiles"
                 android:textColor="#3F51B5"
-                android:textSize="@dimen/textsize"
+                android:textSize="@dimen/twelve_size"
                 android:textStyle="bold"
                 android:gravity="center"
                 android:layout_centerHorizontal="true"/>
@@ -47,28 +47,26 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/productName"
-                android:layout_marginTop="@dimen/ten"
+                android:layout_marginTop="@dimen/five"
                 android:text="Mobiles"
-                android:textColor="#3F51B5"
-                android:textSize="@dimen/textsize"
-                android:textStyle="bold"
                 android:gravity="center"
+                android:textColor="#3F51B5"
+                android:textSize="@dimen/twelve_size"
+                android:textStyle="bold"
                 android:layout_centerHorizontal="true"/>
 
             <Button
                 android:id="@+id/addToCart"
                 android:layout_width="@dimen/two_hundred"
                 android:layout_height="@dimen/forty"
-                android:layout_below="@id/producPrice"
                 android:text="Add To Cart"
-                android:layout_marginTop="@dimen/twenty"
                 android:textColor="#FFFFFF"
                 android:textSize="@dimen/textsize"
                 android:textStyle="bold"
-                android:gravity="center"
                 app:backgroundTint="@null"
                 android:background="@drawable/categorytextback"
-                android:layout_centerHorizontal="true"/>
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentBottom="true"/>
 
         </RelativeLayout>
 

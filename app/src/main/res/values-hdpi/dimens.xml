@@ -12,7 +12,9 @@
     <dimen name="ten">15dp</dimen>
     <dimen name="eleven">16.5dp</dimen>
     <dimen name="twelve">18dp</dimen>
+    <dimen name="twelve_size">18sp</dimen>
     <dimen name="thirteen">19.5dp</dimen>
+    <dimen name="thirteen_size">19.5sp</dimen>
     <dimen name="fourteen">21dp</dimen>
     <dimen name="fifteen">22.5dp</dimen>
     <dimen name="textsize">22.5sp</dimen>
@@ -22,6 +24,7 @@
     <dimen name="edittextsize">27sp</dimen>
     <dimen name="nineteen">28.5dp</dimen>
     <dimen name="twenty">30dp</dimen>
+    <dimen name="twenty_size">30sp</dimen>
     <dimen name="twenty_one">31.5dp</dimen>
     <dimen name="twenty_two">33dp</dimen>
     <dimen name="twenty_three">34.5dp</dimen>

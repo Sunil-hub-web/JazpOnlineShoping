@@ -11,8 +11,8 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.jazponlineshoping.CategoryPage;
-import com.example.jazponlineshoping.ProductDetailsActivity;
+import com.example.jazponlineshoping.activity.CategoryPage;
+import com.example.jazponlineshoping.activity.ProductDetailsActivity;
 import com.example.jazponlineshoping.R;
 import com.example.jazponlineshoping.modelclass.MobileDetails_ModelClass;
 

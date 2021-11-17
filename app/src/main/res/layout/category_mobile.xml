@@ -21,7 +21,7 @@
                 android:id="@+id/product_Image"
                 android:layout_width="@dimen/hundred_twenty"
                 android:layout_height="@dimen/hundred_twenty"
-                android:scaleType="fitCenter"
+                android:scaleType="fitXY"
                 android:src="@drawable/mob2"
                 android:layout_centerHorizontal="true">
 

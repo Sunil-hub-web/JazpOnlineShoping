@@ -3,10 +3,17 @@ package com.example.jazponlineshoping.activity;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.viewpager2.widget.ViewPager2;
 
+import android.app.Dialog;
 import android.content.Intent;
 import android.os.Bundle;
 import android.text.Html;
+import android.view.View;
+import android.view.Window;
+import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
+import android.widget.Button;
 import android.widget.LinearLayout;
+import android.widget.ListView;
 import android.widget.TextView;
 
 import com.example.jazponlineshoping.R;
@@ -17,17 +24,18 @@ import java.util.ArrayList;
 
 public class ProductDescription extends AppCompatActivity {
 
-    TextView text_productName,text_producPrice,text_description_Details;
-    String name,price;
+    TextView text_productName,text_producPrice,text_description_Details,text_change,locationName;
+    String name,price,item_Name;
     String image;
-
+    ListView AddressList;
     LinearLayout dots_container;
     ViewPager2 showImageViewPager2;
     SliderAdpter sliderAdpter;
-
+    Button btn_dismiss;
+    ArrayList<String> addaddress  =new ArrayList<>();
     TextView [] dots;
-
     ArrayList<ShowImage_ModelClass> showImage = new ArrayList<>();
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -38,6 +46,8 @@ public class ProductDescription extends AppCompatActivity {
         dots_container = findViewById(R.id.dots_container);
         showImageViewPager2 = findViewById(R.id.showImageViewPager2);
         text_description_Details = findViewById(R.id.text_description_Details);
+        text_change = findViewById(R.id.text_change);
+        locationName = findViewById(R.id.locationName);
 
         text_description_Details.setText("The mobile phone can be used to communicate over long distances without wires. It works by communicating with a nearby base station (also called a \"mobile tower\") which connects it to the main phone network. When moving, if the mobile phone gets too far away from the cell it is connected to, that cell sends a message to another cell to tell the new cell to take over the call. This is called a \"hand off,\" and the call continues with the new cell the phone is connected to. The hand-off is done so well and carefully that the user will usually never even know that the call was transferred to another cell.\n" +
                 "\n" +
@@ -76,6 +86,63 @@ public class ProductDescription extends AppCompatActivity {
 
                 selectedIndicatorPosition(position);
                 super.onPageSelected(position);
+            }
+        });
+
+
+        addaddress.add("Jaipur");
+        addaddress.add("Bhopal");
+        addaddress.add("Ahmedabad");
+        addaddress.add("Lucknow");
+        addaddress.add("Jodhpur");
+        addaddress.add("Mumbai");
+        addaddress.add(" Bangalore");
+
+        text_change.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Dialog dialog = new Dialog(ProductDescription.this);
+                dialog.setContentView(R.layout.showaddress);
+                dialog.setCancelable(false);
+
+                btn_dismiss = dialog.findViewById(R.id.btn_dismiss);
+                AddressList = dialog.findViewById(R.id.AddressList);
+
+                /*MyListAdapter adapter = new MyListAdapter(ProductDescription.this,addaddress);
+                AddressList.setAdapter(adapter);*/
+
+                AddressArrayAdapter  addressArrayAdapter = new AddressArrayAdapter
+                        (ProductDescription.this,0,addaddress);
+                AddressList.setAdapter(addressArrayAdapter);
+
+                btn_dismiss.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+
+                        dialog.dismiss();
+
+                    }
+                });
+
+                //add event listener so we can handle clicks
+                AdapterView.OnItemClickListener adapterViewListener = new AdapterView.OnItemClickListener() {
+
+                    //on click
+                    public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+
+                        item_Name = addaddress.get(position);
+                        dialog.dismiss();
+                        locationName.setText(item_Name);
+                    }
+                };
+                //set the listener to the list view
+                AddressList.setOnItemClickListener(adapterViewListener);
+
+                dialog.show();
+                Window window = dialog.getWindow();
+                window.setLayout(LinearLayout.LayoutParams.MATCH_PARENT, LinearLayout.LayoutParams.MATCH_PARENT);
+
             }
         });
     }

@@ -9,32 +9,32 @@
         android:id="@+id/rr1"
         android:layout_width="wrap_content"
         android:layout_height="@dimen/two_hundred_fifty"
-        android:layout_marginLeft="10dp"
-        android:background="@drawable/homecard_back"
-        android:layout_marginBottom="10dp">
+        android:layout_margin="@dimen/ten"
+        android:background="@drawable/homecard_back">
 
         <RelativeLayout
             android:id="@+id/clicl_product"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_margin="@dimen/eight">
+            android:layout_marginBottom="@dimen/ten">
 
             <ImageView
                 android:id="@+id/product_Image"
-                android:layout_width="@dimen/hundred_ten"
+                android:layout_width="@dimen/sixty"
                 android:layout_height="@dimen/hundred_ten"
-                android:scaleType="fitCenter"
-                android:src="@drawable/mob2"
-                android:layout_centerHorizontal="true">
+                android:scaleType="fitXY"
+                android:src="@drawable/android_samsung"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/five">
 
             </ImageView>
 
             <TextView
                 android:id="@+id/productName"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/product_Image"
-                android:layout_marginTop="@dimen/five"
+                android:layout_marginTop="@dimen/ten"
                 android:text="Mobiles"
                 android:textColor="#3F51B5"
                 android:textSize="@dimen/twelve_size"
@@ -44,7 +44,7 @@
 
             <TextView
                 android:id="@+id/producPrice"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/productName"
                 android:layout_marginTop="@dimen/five"
@@ -57,7 +57,7 @@
 
             <Button
                 android:id="@+id/addToCart"
-                android:layout_width="@dimen/two_hundred"
+                android:layout_width="@dimen/hundred_fifty"
                 android:layout_height="@dimen/forty"
                 android:text="Add To Cart"
                 android:textColor="#FFFFFF"

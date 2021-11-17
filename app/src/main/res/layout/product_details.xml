@@ -15,7 +15,8 @@
             android:layout_width="@dimen/eighty"
             android:layout_height="@dimen/eighty"
             android:layout_centerHorizontal="true"
-            android:src="@drawable/category1"></ImageView>
+            android:src="@drawable/category1"
+            android:scaleType="fitXY"></ImageView>
 
         <TextView
             android:id="@+id/pname"

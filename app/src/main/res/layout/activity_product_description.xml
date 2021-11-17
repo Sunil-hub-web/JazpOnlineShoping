@@ -199,7 +199,7 @@
                         android:textStyle="bold" />
 
                     <TextView
-                        android:id="@+id/change"
+                        android:id="@+id/text_change"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="@dimen/twenty"
@@ -861,9 +861,6 @@
 
                     </RelativeLayout>
 
-
-
-
                 </LinearLayout>
 
             </LinearLayout>
@@ -878,7 +875,8 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:orientation="horizontal"
-        android:weightSum="2">
+        android:weightSum="2"
+        >
 
         <Button
             android:id="@+id/addToCart"
@@ -891,7 +889,8 @@
             android:textColor="#FFFFFF"
             android:textSize="@dimen/edittextsize"
             android:textStyle="bold"
-            app:backgroundTint="@null" />
+            app:backgroundTint="@null"
+            android:layout_margin="@dimen/ten"/>
 
         <Button
             android:id="@+id/buyNow"
@@ -904,7 +903,8 @@
             android:textColor="#FFFFFF"
             android:textSize="@dimen/edittextsize"
             android:textStyle="bold"
-            app:backgroundTint="@null" />
+            app:backgroundTint="@null"
+            android:layout_margin="@dimen/ten"/>
 
     </LinearLayout>
 
